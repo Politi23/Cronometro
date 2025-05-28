@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cronometro</title>
+  <!-- aqui metemos el CSS  -->
+  <link rel="stylesheet" href="estilacho.css" />
+</head>
+<body>
+  <!-- Titulo y mi cedula -->
+  <header>
+    <h1>Cronometro</h1>
+    <p>Hecho por Jesus Silva, 30.240.760</p>
+  </header>
+
+  <!-- Contenedor principal: cronometro y lista de vueltas -->
+  <div class="container">
+
+    <!-- Caja del cronometro con los botones -->
+    <div class="timer-box">
+      <!-- El display que arranca en 00:00.00 -->
+      <div class="time-display" id="display">00:00.00</div>
+      <!-- Botones para marcar vuelta, reiniciar y iniciar/detener -->
+      <div class="controls">
+        <button class="btn left" id="lapBtn" disabled>Vuelta</button>
+        <button class="btn left" id="resetBtn" disabled>Reiniciar</button>
+        <button class="btn right" id="startStopBtn">Iniciar</button>
+      </div>
+    </div>
+
+    <!-- Aqui aparecen las vueltas que marques -->
+    <div class="laps-box">
+      <h2>Vueltas</h2>
+      <ul class="laps" id="laps"></ul>
+    </div>
+
+  </div>
+
+  <!-- Metemos el JavaScript con toda la logica -->
+  <script src="cronometrox.js"></script>
+</body>
+</html>
